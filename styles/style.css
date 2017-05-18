@@ -24,11 +24,17 @@ time, mark, audio, video {
 html {
     box-sizing: border-box;
 }
+html, body {
+    background-color: #190033;
+}
 *, *:before, *:after {
     box-sizing: inherit;
 }
 a {
-    color: #4a4a4a;
+    color: #f0f0f0;
+}
+a:visited {
+    color: #c6c6c6;
 }
 a:hover {
     cursor: pointer;
@@ -36,27 +42,30 @@ a:hover {
 .page__wrap {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: #190033;
+    justify-content: flex-start;
 }
 header, footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #fafafa;
     justify-content: flex-start;
+    width: 100%;
+    margin: 25px 0;
 }
 .header__title, .footer__info {
-    padding: 20px;
+    padding: 20px 25%;
     font-size: 25px;
     color: #000000;
 }
 .main__wrap {
     display: flex;
     flex-direction: column;
-    background-color: #fafafa;
     justify-content: flex-start;
-
-    padding: 20px;
+    padding: 20px 25%;
+    font-size: 20px;
+    color: #f0f0f0;
+}
+.main__title {
     font-size: 25px;
-    color: #000000;
+    padding: 10px 0;
 }
