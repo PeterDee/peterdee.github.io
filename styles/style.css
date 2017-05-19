@@ -25,16 +25,16 @@ html {
     box-sizing: border-box;
 }
 html, body {
-    background-color: #092a33;
+    background-color: #ffffff;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 a {
-    color: #f0f0f0;
+    color: #2bc7ff;
 }
 a:visited {
-    color: #c6c6c6;
+    color: #2990c4;
 }
 a:hover {
     cursor: pointer;
@@ -48,15 +48,25 @@ a:hover {
 header, footer {
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to right, #092a33, #fafafa, #092a33);
+    background-color: #060606;
     justify-content: flex-start;
     width: 100%;
-    margin: 25px 0;
 }
 .header__title, .footer__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     padding: 20px 25%;
     font-size: 25px;
-    color: #000000;
+    color: #ffffff;
+}
+.header__logo {
+    height: 45px;
+    width: 45px;
+}
+.header__text {
+    align-self: center;
+    padding-left: 10px;
 }
 .main__wrap {
     display: flex;
@@ -64,7 +74,8 @@ header, footer {
     justify-content: flex-start;
     padding: 20px 25%;
     font-size: 20px;
-    color: #f0f0f0;
+    background-color: #ffffff;
+    color: #060606;
     flex: 1;
 }
 .main__title {
