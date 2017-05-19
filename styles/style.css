@@ -56,9 +56,12 @@ header, footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 20px 25%;
     font-size: 25px;
     color: #ffffff;
+    width: 45%;
+    padding: 20px 0;
+    margin: auto;
+    flex-wrap: nowrap;
 }
 .header__logo {
     height: 45px;
@@ -72,11 +75,13 @@ header, footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 20px 25%;
     font-size: 20px;
     background-color: #ffffff;
     color: #060606;
     flex: 1;
+    width: 45%;
+    padding: 20px 0;
+    margin: auto;
 }
 .main__title {
     font-size: 25px;
