@@ -71,8 +71,6 @@ a:hover {
     justify-content: flex-start;
     min-height: 100vh;
 }
-
-/* header */
 header, footer {
     display: flex;
     flex-direction: row;
@@ -80,10 +78,12 @@ header, footer {
     justify-content: flex-start;
     width: 100%;
 }
+
+/* header */
 .header__wrap {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     font-size: 25px;
     color: #ffffff;
     flex-wrap: nowrap;
@@ -94,7 +94,6 @@ header, footer {
 }
 .header__text {
     align-self: center;
-    padding-left: 10px;
 }
 
 /* footer */
