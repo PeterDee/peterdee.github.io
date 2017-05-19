@@ -45,6 +45,11 @@ a:hover {
     justify-content: flex-start;
     min-height: 100vh;
 }
+.page__width {
+    width: 45%;
+    padding: 20px 0;
+    margin: auto;
+}
 header, footer {
     display: flex;
     flex-direction: row;
@@ -58,9 +63,6 @@ header, footer {
     justify-content: flex-start;
     font-size: 25px;
     color: #ffffff;
-    width: 45%;
-    padding: 20px 0;
-    margin: auto;
     flex-wrap: nowrap;
 }
 .header__logo {
@@ -79,9 +81,6 @@ header, footer {
     background-color: #ffffff;
     color: #060606;
     flex: 1;
-    width: 45%;
-    padding: 20px 0;
-    margin: auto;
 }
 .main__title {
     font-size: 25px;
