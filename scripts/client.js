@@ -1,8 +1,10 @@
 $(document).ready(
     function () {
-
         header();
+        main();
         footer();
+
+        $('#footer-link-home').on('click', main);
     });
 
 function header () {
@@ -11,4 +13,8 @@ function header () {
 
 function footer () {
     $('footer').load('./views/components/footer.html');
+}
+
+function main () {
+    $('#main').load('./views/pages/main.html');
 }
