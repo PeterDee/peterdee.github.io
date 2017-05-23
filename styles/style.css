@@ -84,7 +84,6 @@ header, footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 25px;
     color: #ffffff;
     flex-wrap: nowrap;
 }
@@ -94,6 +93,20 @@ header, footer {
 }
 .header__text {
     align-self: center;
+    font-size: 25px;
+}
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    font-size: 20px;
+}
+.header__nav_el {
+    padding: 5px;
+    margin-left: 5px;
+}
+.header__nav_selected {
+    background-color: #4a4a4a;
 }
 
 /* footer */
