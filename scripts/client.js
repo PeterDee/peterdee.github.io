@@ -8,8 +8,15 @@ $(document).ready(
         $('#navAbout').on('click', about);
         $('#navLinks').on('click', links);
 
-        $('#footer-link-home').on('click', main);
+        $('#clicker').on('click', function() {
+            count();
+            console.log('> clicked');
+        });
+
+        $('#footer-link-home').on('click', about);
     });
+
+var i = 0;
 
 function header () {
     $('header').load('./views/components/header.html');
@@ -32,8 +39,12 @@ function about () {
 }
 
 function links () {
-    $('#main').load('./views/pages/links.html');
-    $('#navLinks').addClass('header__nav_selected');
-    $('#navAbout').removeClass('header__nav_selected');
-    $('#navHome').removeClass('header__nav_selected');
+    $('#main').html("");
+}
+
+// test env
+function count () {
+    $('#counter').append('<b>Number: ' + i + '</b>');
+    console.log('> entered');
+    i++;
 }
