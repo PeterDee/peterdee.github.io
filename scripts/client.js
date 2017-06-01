@@ -8,11 +8,6 @@ $(document).ready(
         $('#navAbout').on('click', about);
         $('#navLinks').on('click', links);
 
-        $('#clicker').on('click', function() {
-            count();
-            console.log('> clicked');
-        });
-
         $('#footer-link-home').on('click', about);
     });
 
@@ -40,11 +35,4 @@ function about () {
 
 function links () {
     $('#main').html("");
-}
-
-// test env
-function count () {
-    $('#counter').append('<b>Number: ' + i + '</b>');
-    console.log('> entered');
-    i++;
 }
