@@ -149,3 +149,6 @@ header, footer {
 .main__links, .main__about, .main__social {
     padding: 10px 0;
 }
+.gray__text {
+    color: #b0b0b0;
+}
