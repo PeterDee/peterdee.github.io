@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Arimo:300,400,500,600,700');
 
 /* media queries */
 @media screen and (max-width: 768px) {
@@ -41,7 +41,7 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arimo', sans-serif;
     vertical-align: baseline;
 }
 html {
@@ -144,6 +144,7 @@ header, footer {
 }
 .main__title {
     font-size: 25px;
+    font-weight: 300;
     padding: 10px 0;
 }
 .main__links, .main__about, .main__social {
