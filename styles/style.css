@@ -54,10 +54,10 @@ html, body {
     box-sizing: inherit;
 }
 a {
-    color: #94ceea;
+    color: #fee1c9;
 }
 a:visited {
-    color: #80a8cb;
+    color: #c4a890;
 }
 a:hover {
     cursor: pointer;
@@ -70,7 +70,7 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start;
     min-height: 100vh;
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg-sunset.jpg");
     background-repeat:no-repeat;
     background-size: cover;
 }
@@ -93,7 +93,7 @@ header, footer {
 .header__logo {
     height: 45px;
     width: 45px;
-    opacity: .7;
+    opacity: .8;
 }
 .header__text {
     align-self: center;
@@ -146,7 +146,7 @@ header, footer {
     background-color: #000000;
     color: #ffffff;
     flex: 1;
-    opacity: .7;
+    opacity: .8;
     border-radius: 17px;
     padding: 17px 25px;
 }
