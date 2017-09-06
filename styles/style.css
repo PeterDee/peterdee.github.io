@@ -29,7 +29,7 @@
     .content__width {
         width: 35%;
         min-width: 580px;
-        max-width: 650px;
+        max-width: 580px;
         padding: 20px 25px;
         margin: auto;
     }
@@ -77,6 +77,14 @@ a:hover {
 }
 .invert__link {
     color: #ffffff;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 .page__wrap {
     display: flex;
