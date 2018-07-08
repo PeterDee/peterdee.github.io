@@ -1,1 +1,1 @@
-Static page with HTML / CSS / JS. Uses FLEX.
+HTML / CSS / JS (JQuery)
