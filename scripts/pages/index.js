@@ -1,7 +1,4 @@
 function IndexPage() {
-  // modify location
-  window.history.pushState({}, null, `${window.location.origin}/index`);
-
   // show page
   $('main').empty().append(`
 <div class="index__wrap content__width">

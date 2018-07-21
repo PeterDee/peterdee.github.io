@@ -1,7 +1,4 @@
 function ResumePage() {
-  // modify location
-  window.history.pushState({}, null, `${window.location.origin}/resume`);
-
   // show page
   $('main').empty().append(`
 <div class="index__wrap content__width">
