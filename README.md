@@ -1,1 +1,1 @@
-HTML / CSS / JS (JQuery)
+Built React App (static)
