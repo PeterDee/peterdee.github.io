@@ -1,1 +1,0 @@
-Built React App (static)
