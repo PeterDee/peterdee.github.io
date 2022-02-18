@@ -40,13 +40,19 @@ a {
 a:hover {
   cursor: pointer;
 }
-.wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: calc(100vh - 20px);
+footer {
+  font-size: 10px;
+  color: #757575;
+  text-align: center;
+  margin: 0 15px;
+}
+main {
   background-color: white;
   color: #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 20px);
+  justify-content: center;
   text-align: center;
 }
 .highlight {
@@ -56,10 +62,4 @@ a:hover {
 .sub {
   font-size: 1em;
   margin: 10px 15px 0 15px;
-}
-.bottom {
-  font-size: 10px;
-  color: #757575;
-  text-align: center;
-  margin: 0 15px;
 }
