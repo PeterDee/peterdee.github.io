@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <link
-      href="favicon-dark.png"
+      href="/favicon.svg"
       rel="icon"
-      type="image/x-icon"
-    >
+      type="image/svg+xml"
+    />
     <link
-      href="index.css"
+      href="/index.css"
       rel="stylesheet"
-    >
+    />
     <meta
       content="width=device-width, initial-scale=1"
       name="viewport"
@@ -19,25 +19,56 @@
     </title>
   </head>
   <body>
-    <main>
+    <main id="content">
       <div class="highlight">
         Peter Dyumin
       </div>
       <div class="sub">
-        Lead Full Stack Software Developer, Tech Lead for <a href="https://dunice.net">IBS Dunice</a>
+        Lead Full Stack Software Developer, Tech Lead for <a
+          href="https://dunice.net"
+          target="_blank"
+        >
+          IBS Dunice
+        </a>
       </div>
-      <div class="sub">
-        <a href="https://github.com/peterdee">Github</a> - <a href="mailto:peter.dyumin@gmail.com">Contact</a>
+      <div class="sub-last">
+        <a
+          href="https://github.com/peterdee"
+          target="_blank"
+        >
+          Github
+        </a> - <a
+          href="mailto:peter.dyumin@gmail.com"
+          target="_blank"
+        >
+          Contact
+        </a>
       </div>
     </main>
     <footer>
-      <a href="https://dyum.in">
+      <div class="footer-logo footer-margin">
+        <img
+          alt="Logo"
+          class="footer-logo"
+          src="/favicon.svg"
+        />
+      </div>
+      <a
+        class="footer-margin"
+        href="https://dyum.in"
+        target="_blank"
+      >
         Peter Dyumin
-      </a>, 2023
+      </a><span class="footer-margin">
+        ©
+      </span>2023
     </footer>
     <script>
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("link[rel~='icon']").href = 'favicon-light.png';
+        document.querySelector("link[rel~='icon']").href = 'favicon-light.svg';
+      }
+      if (/Mobi/i.test(window.navigator.userAgent)) {
+        document.getElementById('content').classList.add('main-mobile');
       }
     </script>
   </body>

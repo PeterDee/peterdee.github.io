@@ -25,23 +25,43 @@ a, a:hover, a:visited {
   text-decoration: none;
 }
 footer {
+  align-items: center;
+  bottom: calc(var(--spacer) + var(--spacer) / 2);
   display: flex;
-  font-size: calc(var(--spacer) - (var(--spacer) / 4));
+  font-size: calc(var(--spacer) - (var(--spacer) / 8));
   justify-content: center;
+  position: fixed;
+  width: 100%;
 }
 main {
   color: var(--text);
   display: flex;
   flex-direction: column;
-  height: calc(100vh - (var(--spacer) * 2));
+  height: 100vh;
   justify-content: center;
   text-align: center;
 }
+.footer-margin {
+  margin-right: calc(var(--spacer) / 2);
+}
+.footer-logo {
+  height: calc(var(--spacer) + var(--spacer) / 2);
+  width: calc(var(--spacer) + var(--spacer) / 2);
+}
 .highlight {
   font-size: 5em;
-  margin: 0 var(--spacer);
+  margin: calc(var(--spacer) * 4) var(--spacer) 0 var(--spacer);
+}
+.main-mobile {
+  height: fill-available;
+  height: -webkit-fill-available;
+}
+.sub, .sub-last {
+  font-size: 1em;
 }
 .sub {
-  font-size: 1em;
   margin: calc(var(--spacer) - (var(--spacer) / 4)) var(--spacer) 0 var(--spacer);
+}
+.sub-last {
+  margin: calc(var(--spacer) - (var(--spacer) / 4)) var(--spacer) calc(var(--spacer) * 4) var(--spacer);
 }
