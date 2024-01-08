@@ -24,7 +24,7 @@
         Peter Dyumin
       </div>
       <div class="sub">
-        Lead Full Stack Software Developer, Tech Lead for <a
+        Lead Full Stack Software Developer, Tech Lead, Team Lead for <a
           href="https://dunice.net"
           target="_blank"
         >
@@ -59,9 +59,11 @@
         target="_blank"
       >
         Peter Dyumin
-      </a><span class="footer-margin">
+      </a>
+      <span class="footer-margin">
         ©
-      </span>2024
+      </span>
+      <span id="year"></span>
     </footer>
     <script>
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -70,6 +72,8 @@
       if (/Mobi/i.test(window.navigator.userAgent)) {
         document.getElementById('content').classList.add('main-mobile');
       }
+      const year = new Date().getFullYear();
+      document.getElementById('year').append(year);
     </script>
   </body>
 </html>
