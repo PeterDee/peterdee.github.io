@@ -45,32 +45,80 @@
         </a>
       </div>
     </main>
-    <footer>
-      <div class="footer-logo footer-margin">
+    <footer class="transparent">
+      <div class="footer-logo footer-margin transparent">
         <img
           alt="Logo"
-          class="footer-logo"
+          class="footer-logo transparent"
           src="/favicon.svg"
         />
       </div>
       <a
-        class="footer-margin"
+        class="footer-margin transparent"
         href="https://dyum.in"
         target="_blank"
       >
         Peter Dyumin
       </a>
-      <span class="footer-margin">
+      <span class="footer-margin transparent">
         ©
       </span>
-      <span id="year"></span>
+      <span
+        class="transparent"
+        id="year"
+      ></span>
     </footer>
+    <div class="waves-container">
+      <svg
+        class="waves"
+        id="waves"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+        viewBox="0 24 150 28"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs>
+          <path
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            id="gentle-wave"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            fill="rgba(205, 205, 205, 0.7)"
+            x="48"
+            xlink:href="#gentle-wave"
+            y="0"
+          />
+          <use
+            fill="rgba(205, 205, 205, 0.5)"
+            x="48"
+            xlink:href="#gentle-wave"
+            y="3"
+          />
+          <use
+            fill="rgba(205, 205, 205, 0.3)"
+            x="48"
+            xlink:href="#gentle-wave"
+            y="5"
+          />
+          <use
+            fill="rgba(205, 205, 205, 0.9)"
+            x="48"
+            xlink:href="#gentle-wave"
+            y="7"
+          />
+        </g>
+      </svg>
+    </div>
     <script>
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.querySelector("link[rel~='icon']").href = 'favicon-light.svg';
       }
       if (/Mobi/i.test(window.navigator.userAgent)) {
         document.getElementById('content').classList.add('main-mobile');
+        document.getElementById('waves').classList.add('waves-mobile');
       }
       const year = new Date().getFullYear();
       document.getElementById('year').append(year);
